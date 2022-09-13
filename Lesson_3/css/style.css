@@ -1,0 +1,19 @@
+.title {
+   color: #B34EE9;
+}
+
+.contents li {
+   color: darkred;
+}
+
+.contents li a {
+   color: red;
+}
+
+div p {
+   color: #6C6150;
+}
+
+.btn-start {
+   color: green;
+}
