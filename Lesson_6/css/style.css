@@ -91,6 +91,7 @@
 
 .quote {
    margin-bottom: 48px;
+   padding-left: 58px;
 }
 
 .text-average {
@@ -99,6 +100,7 @@
 
 .list {
    margin-bottom: 24px;
+   padding-left: 32px;
 }
 
 .list li {
