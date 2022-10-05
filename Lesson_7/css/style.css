@@ -31,7 +31,7 @@
 
 /* --------- ОСНОВНІ СТИЛІ ------------ */
 
-[class*="container"] {
+[class*="__container"] {
    max-width: 810px;
    margin: 0 auto;
 }
