@@ -1,0 +1,55 @@
+/* --------- ПІДКЛЮЧЕННЯ ОБНУЛЕННЯ ------------ */
+@import "reset.css";
+
+
+
+/* --------- ОСНОВНІ СТИЛІ ------------ */
+
+body {
+   background-color: #F4F5F6;
+   font-size: 20px;
+}
+
+[class*="__container"] {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.homework {
+   padding: 40px 0;
+}
+
+.homework p {
+   font-weight: 700;
+   margin-bottom: 7px;
+}
+
+.homework-info {
+   margin-bottom: 20px;
+}
+
+.homework-info ul li {
+   font-size: 20px;
+}
+
+.homework-info ul li:not(:last-child) {
+   margin-bottom: 5px;
+}
+
+.homework-info ul li::before {
+   content: "";
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   background-color: tomato;
+   border-radius: 50%;
+   margin-right: 10px;
+}
+
+.homework-images {
+   text-align: center;
+}
+
+.homework-images img {
+   max-width: 100%;
+}
