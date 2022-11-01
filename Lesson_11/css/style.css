@@ -164,8 +164,6 @@ body {
    padding: 200px 0 100px;
 }
 
-.practice {}
-
 .title {
    text-align: center;
    font-size: 28px;
@@ -237,9 +235,6 @@ body {
    border-bottom: 1px solid #000;
 }
 
-
-.absolute-block {}
-
 .absolute-block__title {
    margin-bottom: 30px;
 }
@@ -262,7 +257,6 @@ body {
    border-bottom: 1px solid #000;
 }
 
-.fixed-block {}
 
 .fixed-block__title {
    margin-bottom: 30px;
@@ -282,6 +276,7 @@ body {
    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
    font-size: 14px;
    overflow: hidden;
+   z-index: 10;
 }
 
 .construction__link {
@@ -310,8 +305,6 @@ body {
    border-bottom: 1px solid #000;
 }
 
-.sticky-block {}
-
 .sticky-block__title {
    margin-bottom: 30px;
 }
@@ -319,10 +312,6 @@ body {
 .sticky-block__construction {
    margin: 0 auto;
 }
-
-.construction__item {}
-
-.item {}
 
 .item__title {
    line-height: 1.7;
@@ -347,8 +336,6 @@ body {
 .item__list {
    margin-bottom: 20px;
 }
-
-.list {}
 
 .list__item {
    min-height: 16px;
@@ -379,8 +366,6 @@ body {
    margin-bottom: 50px;
 }
 
-.z-index-block {}
-
 .z-index-block__title {
    margin-bottom: 30px;
 }
@@ -388,8 +373,6 @@ body {
 .z-index-block__construction {
    margin: 0 auto;
 }
-
-.construction__item {}
 
 .construction__item--z1 {
    position: relative;
@@ -421,10 +404,6 @@ body {
 
 /* =============== СТИЛІ CAR =============== */
 
-.practice__car-block {}
-
-.car-block {}
-
 .car-block__title {
    margin-bottom: 40px;
 }
@@ -455,8 +434,6 @@ body {
    margin-left: 180px;
    z-index: 3;
 }
-
-.fisrt-part {}
 
 .first-part__front-glass {
    position: absolute;
@@ -563,9 +540,6 @@ body {
    left: 0;
 }
 
-.second-part {}
-
-
 .body-car__third-part {
    display: inline-block;
    background-color: #d82b08;
@@ -574,8 +548,6 @@ body {
    width: 270px;
    position: relative;
 }
-
-.third-part {}
 
 .third-part__block {
    width: 190px;
@@ -607,7 +579,6 @@ body {
    z-index: 3;
 }
 
-
 .third-part__ladder {
    position: absolute;
    z-index: 1;
@@ -617,8 +588,6 @@ body {
    top: -60px;
    left: -435px;
 }
-
-.ladder {}
 
 .ladder__item {
    display: inline-block;
