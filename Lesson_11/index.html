@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 11</title>
+</head>
+
+<body>
+   <div class="warpper">
+      <header class="header">
+         <div class="header__container">
+            <h1 class="header__title">Positioning</h1>
+            <ul class="header__menu menu">
+               <li class="menu__item">
+                  <a href="#1" class="menu__link">Relative</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#2" class="menu__link">Absolute</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#3" class="menu__link">Fixed</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#4" class="menu__link">Sticky</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#5" class="menu__link">Z-index</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#6" class="menu__link">Car</a>
+                  <ul class="menu__sub-menu sub-menu">
+                     <li class="sub-menu__item">
+                        <a href="#" class="sub-menu__link">Lorem</a>
+                     </li>
+                     <li class="sub-menu__item">
+                        <a href="#" class="sub-menu__link">Lorem</a>
+                     </li>
+                     <li class="sub-menu__item">
+                        <a href="#" class="sub-menu__link">Lorem</a>
+                     </li>
+                     <li class="sub-menu__item">
+                        <a href="#" class="sub-menu__link">Lorem</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </header>
+      <main class="main" id="start">
+         <div class="main__container">
+            <div class="main__practice practice">
+               <div id="1" class="practice__relative-block relative-block">
+                  <h2 class="relative-block__title title">Relative</h2>
+                  <div class="relative-block__construction construction">
+                     <div class="construction__item construction__item--one">Item 1</div>
+                     <div class="construction__item construction__item--two">Item 2</div>
+                     <div class="construction__item construction__item--three construction__item--rel">Item 3</div>
+                     <div class="construction__item construction__item--four">Item 4</div>
+                  </div>
+               </div>
+               <div id="2" class="practice__absolute-block absolute-block">
+                  <h2 class="absolute-block__title title">Absolute</h2>
+                  <div class="absolute-block__construction construction">
+                     <div class="construction__item construction__item--one">Item 1</div>
+                     <div class="construction__item construction__item--two">Item 2</div>
+                     <div class="construction__item construction__item--three construction__item--absol">Item 3</div>
+                     <div class="construction__item construction__item--four">Item 4</div>
+                  </div>
+               </div>
+               <div id="3" class="practice__fixed-block fixed-block">
+                  <h2 class="fixed-block__title title">Fixed</h2>
+                  <div class="fixed-block__construction construction">
+                     <div class="construction__item construction__item--one">Item 1</div>
+                     <div class="construction__item construction__item--two">Item 2</div>
+                     <div class="construction__item construction__item--three construction__item--circle">
+                        <a href="#start" class="construction__link">Item 3</a>
+                     </div>
+                     <div class="construction__item construction__item--four">Item 4</div>
+                  </div>
+               </div>
+               <div id="4" class="practice__sticky-block sticky-block">
+                  <h2 class="sticky-block__title title">Sticky</h2>
+                  <div class="sticky-block__construction construction">
+                     <div class="construction__item item construction__item--sticky">
+                        <h3 class="item__title">Item 1</h3>
+                        <p class="item__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam
+                           explicabo sequi itaque
+                           optio dolor, nihil, aliquam sint reprehenderit praesentium obcaecati ducimus a quibusdam
+                           perferendis nisi et temporibus repellendus placeat.
+                           Consequuntur nam distinctio officiis aliquid numquam, libero dolorem eos sit quibusdam vero
+                           esse, laborum pariatur in quae velit quod tenetur rerum modi error itaque mollitia officia
+                           earum asperiores. Corrupti, esse.
+                           Fugit porro reiciendis quaerat perferendis, labore qui, recusandae nulla delectus debitis
+                           assumenda dolore vero tenetur voluptates distinctio. Provident, inventore labore asperiores
+                           ut, tempora, quia fuga magni veniam voluptate excepturi dignissimos.</p>
+                     </div>
+                     <div class="construction__item item construction__item--sticky">
+                        <h3 class="item__title">Item 2</h3>
+                        <p class="item__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam
+                           explicabo sequi itaque
+                           optio dolor, nihil, aliquam sint reprehenderit praesentium obcaecati ducimus a quibusdam
+                           perferendis nisi et temporibus repellendus placeat.
+                           Consequuntur nam distinctio officiis aliquid numquam, libero dolorem eos sit quibusdam vero
+                           esse, laborum pariatur in quae velit quod tenetur rerum modi error itaque mollitia officia
+                           earum asperiores. Corrupti, esse.
+                           Fugit porro reiciendis quaerat perferendis, labore qui, recusandae nulla delectus debitis
+                           assumenda dolore vero tenetur voluptates distinctio. Provident, inventore labore asperiores
+                           ut, tempora, quia fuga magni veniam voluptate excepturi dignissimos.</p>
+                        <ul class="item__list list">
+                           <li class="list__item">List item 1</li>
+                           <li class="list__item">List item 2</li>
+                           <li class="list__item">List item 3</li>
+                           <li class="list__item">List item 4</li>
+                           <li class="list__item">List item 5</li>
+                           <li class="list__item">List item 6</li>
+                        </ul>
+                     </div>
+                     <div class="construction__item item construction__item--sticky">
+                        <h3 class="item__title">Item 3</h3>
+                        <p class="item__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam
+                           explicabo sequi itaque
+                           optio dolor, nihil, aliquam sint reprehenderit praesentium obcaecati ducimus a quibusdam
+                           perferendis nisi et temporibus repellendus placeat.
+                           Consequuntur nam distinctio officiis aliquid numquam, libero dolorem eos sit quibusdam vero
+                           esse, laborum pariatur in quae velit quod tenetur rerum modi error itaque mollitia officia
+                           earum asperiores. Corrupti, esse.
+                           Fugit porro reiciendis quaerat perferendis, labore qui, recusandae nulla delectus debitis
+                           assumenda dolore vero tenetur voluptates distinctio. Provident, inventore labore asperiores
+                           ut, tempora, quia fuga magni veniam voluptate excepturi dignissimos.
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eaque minus, ad totam id non
+                           eum fugiat reiciendis voluptas in reprehenderit cumque illo. Quisquam, blanditiis voluptas
+                           deserunt ea architecto iste.
+                           Quisquam error rem dolores. Aut nam laboriosam ratione omnis dolorum maiores qui vitae
+                           cumque, veritatis laborum vero, alias hic quae. Aliquam vero recusandae provident ratione
+                           mollitia pariatur perspiciatis labore. Ex?</p>
+                     </div>
+                     <div class="construction__item item construction__item--sticky">
+                        <h3 class="item__title">Item 4</h3>
+                        <p class="item__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam
+                           explicabo sequi itaque
+                           optio dolor, nihil, aliquam sint reprehenderit praesentium obcaecati ducimus a quibusdam
+                           perferendis nisi et temporibus repellendus placeat.
+                           Consequuntur nam distinctio officiis aliquid numquam, libero dolorem eos sit quibusdam vero
+                           esse, laborum pariatur in quae velit quod tenetur rerum modi error itaque mollitia officia
+                           earum asperiores. Corrupti, esse.
+                           Fugit porro reiciendis quaerat perferendis, labore qui, recusandae nulla delectus debitis
+                           assumenda dolore vero tenetur voluptates distinctio. Provident, inventore labore asperiores
+                           ut, tempora, quia fuga magni veniam voluptate excepturi dignissimos.
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eaque minus, ad totam id non
+                           eum fugiat reiciendis voluptas in reprehenderit cumque illo. Quisquam, blanditiis voluptas
+                           deserunt ea architecto iste.
+                           Quisquam error rem dolores. Aut nam laboriosam ratione omnis dolorum maiores qui vitae
+                           cumque, veritatis laborum vero, alias hic quae. Aliquam vero recusandae provident ratione
+                           mollitia pariatur perspiciatis labore. Ex?
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illum omnis, tenetur
+                           maiores nesciunt, enim maxime cupiditate praesentium fugiat veritatis nostrum quasi! Expedita
+                           amet nostrum deleniti temporibus quo ea deserunt!
+                           Nisi, molestiae deserunt illo eius numquam beatae magni reiciendis doloremque quasi velit
+                           magnam, ad corporis. Mollitia recusandae obcaecati neque nobis aliquid voluptas reprehenderit
+                           soluta, delectus nesciunt saepe quae possimus accusamus!
+                           Aliquam sunt, expedita quam iusto maxime tenetur temporibus tempora nemo est natus hic
+                           voluptates non laboriosam soluta dolorem, ad numquam mollitia aspernatur aliquid saepe, vitae
+                           voluptas. Facilis assumenda et aliquam?
+                           Eveniet illo quia reprehenderit sapiente nemo est sint veniam ut porro dolore, consequuntur
+                           laboriosam non eligendi autem! Dolore, nobis nam praesentium enim eveniet consequuntur
+                           laboriosam odit aut alias cum quaerat.
+                           Voluptatum accusantium nam, repellat unde qui voluptates veritatis illum rem consectetur,
+                           soluta vitae et delectus nesciunt accusamus cumque nulla eos velit harum ad cupiditate at
+                           tempore aliquam. Nisi, voluptatum assumenda.</p>
+                     </div>
+                  </div>
+               </div>
+               <div id="5" class="practice__z-index-block z-index-block">
+                  <h2 class="z-index-block__title title">Z-index</h2>
+                  <div class="z-index-block__construction construction">
+                     <div class="construction__item construction__item--one construction__item--z1">Item 1</div>
+                     <div class="construction__item construction__item--two construction__item--z2">Item 2</div>
+                     <div class="construction__item construction__item--three construction__item--z3">Item 3</div>
+                     <div class="construction__item construction__item--four construction__item--z4">Item 4</div>
+                  </div>
+               </div>
+               <div id="6" class="practice__car-block car-block">
+                  <h2 class="car-block__title title">Car</h2>
+                  <div class="car-block__body body-car">
+                     <div class="body-car__fisrt-part fisrt-part">
+                        <div class="first-part__front-glass"></div>
+                        <div class="first-part__side-glass-one"></div>
+                        <div class="first-part__side-glass-one--border"></div>
+                        <div class="first-part__side-glass-two"></div>
+                        <div class="first-part__headlamp"></div>
+                        <div class="first-part__door-handle"></div>
+                     </div>
+                     <div class="body-car__construction-circle"></div>
+                     <div class="body-car__bumper"></div>
+                     <div class="body-car__second-part second-part">
+                        <div class="second-part__section"></div>
+                     </div>
+                     <div class="body-car__third-part third-part">
+                        <div class="third-part__block block">
+                           <div class="block__item"></div>
+                           <div class="block__item"></div>
+                           <div class="block__item"></div>
+                           <div class="block__item"></div>
+                        </div>
+                        <div class="third-part__crane"></div>
+                        <div class="third-part__circle"></div>
+                        <div class="third-part__ladder ladder">
+                           <div class="ladder__item"></div>
+                           <div class="ladder__item"></div>
+                           <div class="ladder__item"></div>
+                           <div class="ladder__item"></div>
+                           <div class="ladder__item"></div>
+                           <div class="ladder__item"></div>
+                           <div class="ladder__item"></div>
+                           <div class="ladder__item"></div>
+                        </div>
+                     </div>
+                     <div class="body-car__wheel body-car__wheel--one"></div>
+                     <div class="body-car__wheel body-car__wheel--two"></div>
+                     <div class="body-car__wheel body-car__wheel--three"></div>
+                     <div class="body-car__wheel-disc body-car__wheel-disc--one"></div>
+                     <div class="body-car__wheel-disc body-car__wheel-disc--two"></div>
+                     <div class="body-car__wheel-disc body-car__wheel-disc--thre"></div>
+                     <div class="body-car__flashing-light body-car__flashing-light--blue"></div>
+                     <div class="body-car__flashing-light body-car__flashing-light--red"></div>
+                  </div>
+               </div>
+            </div>
+      </main>
+      <footer></footer>
+   </div>
+</body>
+
+</html>
