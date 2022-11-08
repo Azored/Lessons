@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 12</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header></header>
+      <main>
+         <div class="example">
+            <h2 class="example__title title">Відпрацювання властивостей Transform</h2>
+            <div class="example__advice">
+               <p>
+                  Щоб побачити роботу властивостей, просто наведіть курсор на об'єкт
+               </p>
+            </div>
+            <div class="example__container">
+               <div class="example__translate translate">
+                  <h3 class="translate__title title">Властивість Translate</h3>
+                  <div class="translate__body body">
+                     <div class="body__item item">
+                        <h3 class="item__title">translate (20px, 30px)</h3>
+                        <div class="item__content item__content--trl-one"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">translateY (50%)</h3>
+                        <div class="item__content item__content--trl-two"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">translateX (200%)</h3>
+                        <div class="item__content item__content--trl-three"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="example__scale scale">
+                  <h3 class="scale__title title">Властивість Scale</h3>
+                  <div class="scale__body body">
+                     <div class="body__item item">
+                        <h3 class="item__title">scale (1.5)</h3>
+                        <div class="item__content item__content--scl-one"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">scale (0.5)</h3>
+                        <div class="item__content item__content--scl-two"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="example__rotate rotate">
+                  <h3 class="rotate__title title">Властивість Rotate</h3>
+                  <div class="rotate__body body">
+                     <div class="body__item item">
+                        <h3 class="item__title">rotate (45deg)</h3>
+                        <div class="item__content item__content--rot-one"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">rotate (-135deg)</h3>
+                        <div class="item__content item__content--rot-two"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="example__origin-rotate rotate-origin">
+                  <h3 class="rotate-origin__title title">Властивість Transform-origin з Rotate</h3>
+                  <div class="rotate-origin__body body">
+                     <div class="body__item item">
+                        <h3 class="item__title">transform-origin: 0 0 та rotate(60deg)</h3>
+                        <div class="item__content item__content--orig-one"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">transform-origin: 100% 0 та rotate(-60deg)</h3>
+                        <div class="item__content item__content--orig-two"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">transform-origin: 20% 90% та rotate(110deg)</h3>
+                        <div class="item__content item__content--orig-three"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="example__skew skew">
+                  <h3 class="skew__title title">Властивість Skew</h3>
+                  <div class="skew__body body">
+                     <div class="body__item item">
+                        <h3 class="item__title">skew(-20deg, 0)</h3>
+                        <div class="item__content item__content--skw-one"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">skew(-30deg, 60deg)</h3>
+                        <div class="item__content item__content--skw-two"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">skew(30deg, 120deg)</h3>
+                        <div class="item__content item__content--skw-three"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="example__perspective perspective">
+                  <h3 class="perspective__title title">Властивість Perspective з Rotate</h3>
+                  <div class="perspective__body body">
+                     <div class="body__item item">
+                        <h3 class="item__title">perspective: 300px та rotateX(67deg)</h3>
+                        <div class="item__content item__content--per-one"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">perspective: 300px та rotateY(-135deg)</h3>
+                        <div class="item__content item__content--per-two"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="example__matrix matrix">
+                  <h3 class="matrix__title title">Властивість Matrix</h3>
+                  <div class="matrix__body body">
+                     <div class="body__item item">
+                        <h3 class="item__title">matrix(1.4, 0.50, 0.50, 0.4, 0, 0)</h3>
+                        <div class="item__content item__content--mtx-one"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">matrix(1.5, 0.17, 0.42, 1.5, 150, -30)</h3>
+                        <div class="item__content item__content--mtx-two"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="example__translate3d translate3d">
+                  <h3 class="translate3d__title title">Властивість Translate3d</h3>
+                  <div class="translate3d__body body">
+                     <div class="body__item item">
+                        <h3 class="item__title">translate3d(50px, 25px, -40px)</h3>
+                        <div class="item__content item__content--trl3d-one"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">translate3d(-160px, -25px, 100px)</h3>
+                        <div class="item__content item__content--trl3d-two"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="example__scale3d scale3d">
+                  <h3 class="scale3d__title title">Властивість Scale3d</h3>
+                  <div class="scale3d__body body">
+                     <div class="body__item item">
+                        <h3 class="item__title">scale3d(1.2, 1.3, 1)</h3>
+                        <div class="item__content item__content--scl3d-one"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">scale3d(1, 1.8, 1)</h3>
+                        <div class="item__content item__content--scl3d-two"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="example__rotate3d rotate3d">
+                  <h3 class="rotate3d__title title">Властивість Rotate3d</h3>
+                  <div class="rotate3d__body body">
+                     <div class="body__item item">
+                        <h3 class="item__title">rotate3d(1, 2.2, 1.2, 60deg)</h3>
+                        <div class="item__content item__content--rot3d-one"></div>
+                     </div>
+                     <div class="body__item item">
+                        <h3 class="item__title">rotate3d(3, 2.2, 1.5, -140deg)</h3>
+                        <div class="item__content item__content--rot3d-two"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="example__preserve3d preserve3d">
+               <h3 class="preserve3d__title title">Властивість transform-style: preserve-3d</h3>
+               <div class="preserve3d__body body">
+                  <div class="body__item item">
+                     <h3 class="item__title">transform-style: preserve-3d та rotateX(65deg)</h3>
+                     <div class="item__content item__content--prs3d-one"></div>
+                  </div>
+                  <div class="body__item item">
+                     <h3 class="item__title">transform-style: preserve-3d та rotateY(45deg)</h3>
+                     <div class="item__content item__content--prs3d-two"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="example__backface backface">
+               <h3 class="backface__title title">Властивість Backface-visibility</h3>
+               <div class="backface__body body">
+                  <div class="body__item item">
+                     <h3 class="item__title">backface-visibility: hidden та rotateY(180deg)</h3>
+                     <div class="item__content item__content--bkf-one"></div>
+                  </div>
+                  <div class="body__item item">
+                     <h3 class="item__title">backface-visibility: hidden та rotateX(-180deg)</h3>
+                     <div class="item__content item__content--bkf-two"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="example__matrix3d matrix3d">
+               <h3 class="matrix3d__title title">Властивість Matrix3d</h3>
+               <div class="matrix3d__body body">
+                  <div class="body__item item">
+                     <h3 class="item__title">matrix3d(0.5568, -0.5, -0.77, 0, 0.50, 0.87, 0.00, 0, 0.77, 0, 0.64, 0, 0,
+                        0, 0, 1)</h3>
+                     <div class="item__content item__content--mtx3d-one"></div>
+                  </div>
+                  <div class="body__item item">
+                     <h3 class="item__title">matrix3d(0.3822, -0.42, 0.91, 0.0007, 0.42, 0.7280000000000001, 0.00,
+                        0.001, -0.91, 0, 0.42, 0, 160, 30, 0, 1)</h3>
+                     <div class="item__content item__content--mtx3d-two"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="practice">
+            <h2 class="practice__title title">Практика з використання Transform</h2>
+            <div class="practice__container">
+               <div class="practice__arrow arrow">
+                  <a href="#" class="arrow__link">Наведи на мене</a>
+               </div>
+               <div class="practice__cards cards">
+                  <div class="cards__item">
+                     <img src="img/01.jpg" alt="Карточка з машиною">
+                  </div>
+                  <div class="cards__item">
+                     <img src="img/02.jpg" alt="Карточка з машиною">
+                  </div>
+               </div>
+               <div class="practice__cube cube">
+                  <div class="cube__body">
+                     <div class="cube__side cube__side--front">front</div>
+                     <div class="cube__side cube__side--back">back</div>
+                     <div class="cube__side cube__side--right">right</div>
+                     <div class="cube__side cube__side--left">left</div>
+                     <div class="cube__side cube__side--top">top</div>
+                     <div class="cube__side cube__side--bottom">bottom</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </div>
+   </main>
+   <footer></footer>
+   </div>
+</body>
+
+</html>
