@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 13</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header></header>
+      <main>
+         <div class="advice">
+            <div class="advice__block">
+               <p>
+                  Щоб побачити роботу властивостей, просто наведіть курсор на об'єкт
+               </p>
+            </div>
+         </div>
+         <div class="example">
+            <h2 class="example__title title">Відрацювання властивостей Transition та Animation</h2>
+            <div class="example__container">
+               <div class="example__structure structure">
+                  <h3 class="structure__title title">Властивість Transition</h3>
+                  <div class="structure__body body">
+                     <div class="body__item">
+                        <h4 class="body__subject subject">transition: transform 0.8s linear 0s, background-color 0.4s
+                           ease 0s</h4>
+                        <div class="body__object body__object--trone"></div>
+                     </div>
+                     <div class="body__item">
+                        <h4 class="body__subject subject">transition: all 0.5s ease-in-out 0.5s</h4>
+                        <div class="body__object body__object--trtwo"></div>
+                     </div>
+                     <div class="body__item">
+                        <h4 class="body__subject subject">transition: all 0.8s cubic-bezier(0.75, -1, 0.21, -1) 0s
+                        </h4>
+                        <div class="body__object body__object--trthree"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="example__structure structure">
+                  <h3 class="structure__title title">Властивість Animation</h3>
+                  <div class="structure__body body">
+                     <div class="body__item">
+                        <h4 class="body__subject subject">animation: rotate 4s linear 0s infinite alternate none</h4>
+                        <div class="body__object body__object--anione"></div>
+                     </div>
+                     <div class="body__item">
+                        <h4 class="body__subject subject">animation: move 3s linear 0s infinite alternate none</h4>
+                        <div class="body__object body__object--anitwo"></div>
+                     </div>
+                     <div class="body__item">
+                        <h4 class="body__subject subject">animation: way 8s ease 0s infinite normal backwards</h4>
+                        <div class="body__object body__object--anithree"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="task">
+            <h2 class="task__title title">Виконання домашнього завдання</h2>
+            <div class="task__container">
+               <div class="task__homework-one homework-one">
+                  <h3 class="homework-one__title title">Завдання №1</h3>
+                  <p class="homework-one__description description">
+                     За допомогою transition потрібно зробити появу об'єкту при наведенні. Поява має відбутись за 3
+                     секунди через 1 секунду після наведення. Також має змінись колір фону об'єкту після появи.
+                  </p>
+                  <div class="homework-one__body">
+                     <div class="homework-one__item homework-one__item--one">Наведи на мене</div>
+                     <!-- <div class="homework-one__item homework-one__item--two"></div> -->
+                  </div>
+               </div>
+               <div class="task__homework-two homework-two">
+                  <h3 class="homework-two__title title">Завдання №2</h3>
+                  <p class="homework-two__description description">
+                     За допомогою animation & @keyframes зробити анімацію появи заголовку та тексту, а також
+                     неперервну ротацію об'єкту, повний оберт за 5 секунд.
+                  </p>
+                  <div class="homework-two__body">
+                     <div class="homework-two__object"></div>
+                     <a href="#start-ani" class="homework-two__btn btn">Натисни на мене</a>
+                     <div id="start-ani" class="homework-two__article">
+                        <h4 class="homework-two__subject">Це заголовок</h4>
+                        <p class="homework-two__text">
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod fugiat iste.
+                           Tenetur dicta eum atque, corporis facere quasi maiores asperiores maxime cum inventore
+                           vitae
+                           laudantium necessitatibus sit accusamus? Illo?
+                        </p>
+                        <p class="homework-two__text">
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod fugiat iste.
+                           Tenetur dicta eum atque, corporis facere quasi maiores asperiores maxime cum inventore
+                           vitae
+                           laudantium necessitatibus sit accusamus? Illo?
+                        </p>
+                        <p class="homework-two__text">
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod fugiat iste.
+                           Tenetur dicta eum atque, corporis facere quasi maiores asperiores maxime cum inventore
+                           vitae
+                           laudantium necessitatibus sit accusamus? Illo?
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="practice">
+            <h2 class="practice__title title">Практика</h2>
+            <div class="practice__container">
+               <div class="practice__part-one part-one">
+                  <a href="#" class="part-one__link"><span>Наведи на мене</span></a>
+               </div>
+               <div class="practice__part-two part-two">
+                  <div class="part-two__cube cube">
+                     <div class="cube__body">
+                        <div class="cube__side cube__side--front">front</div>
+                        <div class="cube__side cube__side--back">back</div>
+                        <div class="cube__side cube__side--right">right</div>
+                        <div class="cube__side cube__side--left">left</div>
+                        <div class="cube__side cube__side--top">top</div>
+                        <div class="cube__side cube__side--bottom">bottom</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer></footer>
+   </div>
+</body>
+
+</html>
