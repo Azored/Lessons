@@ -268,7 +268,7 @@ body {
    }
 
    75% {
-      border-radius: none;
+      border-radius: 0;
       transform: rotate(45deg);
    }
 
