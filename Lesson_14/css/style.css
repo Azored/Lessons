@@ -1,0 +1,371 @@
+/* =============== ПІДКЛЮЧЕННЯ ОБНУЛЕННЯ =============== */
+@import "reset.css";
+
+
+/* =============== ПІДКЛЮЧЕННЯ ШРИФТІВ =============== */
+@font-face {
+   font-family: lato;
+   src: url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
+   font-display: swap;
+   font-style: normal;
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: lato;
+   src: url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
+   font-display: swap;
+   font-style: normal;
+   font-weight: 700;
+}
+
+/* =============== ОСНОВНІ СТИЛІ =============== */
+
+body {
+   font-family: "lato";
+   line-height: 1.2;
+   color: #fff;
+}
+
+main {
+   background-color: #333;
+}
+
+[class*="__container"] {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: rgb(215, 198, 0);
+   width: 100%;
+}
+
+.header__title {
+   line-height: 70px;
+   font-size: 36px;
+   padding-left: 50px;
+}
+
+.title {
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   text-shadow: 0px 4px 6px #000;
+}
+
+.footer {
+   background-color: rgb(215, 198, 0);
+   text-align: center;
+   font-size: 20px;
+   line-height: 40px;
+}
+
+.page {
+   padding-top: 100px;
+}
+
+.page__example {
+   margin-bottom: 40px;
+}
+
+.example__title {
+   text-align: center;
+   background-color: rgb(215, 198, 0);
+   font-size: 26px;
+   margin-bottom: 20px;
+   line-height: 40px;
+}
+
+.example__space {
+   max-width: 1000px;
+   margin: 0 auto 40px;
+   border-radius: 20px;
+   overflow: hidden;
+   border: 2px solid rgb(135, 135, 135);
+
+}
+
+.example__sub-title {
+   font-size: 22px;
+   text-align: center;
+   background-color: rgb(215, 198, 0);
+   line-height: 40px;
+}
+
+.example__structure {
+   padding: 20px 0;
+}
+
+.example__structure:not(:last-child) {
+   border-bottom: 2px dashed rgb(135, 135, 135);
+
+}
+
+.structure__title {
+   text-align: center;
+   margin-bottom: 20px;
+   line-height: 30px;
+   text-transform: none;
+}
+
+.structure__block {
+   background-color: rgb(215, 198, 0);
+   line-height: 50px;
+   text-align: center;
+   border: 1px solid rgb(135, 135, 135);
+   font-size: 20px;
+   padding: 15px;
+}
+
+.structure__block--one {
+   background-color: rgb(185, 3, 3);
+}
+
+.structure__block--two {
+   background-color: rgb(0, 225, 109);
+}
+
+.structure__block--three {
+   background-color: rgb(78, 112, 249);
+}
+
+.structure__block--four {
+   background-color: rgb(132, 4, 230);
+}
+
+.structure__block--five {
+   background-color: rgb(207, 1, 193);
+}
+
+
+.structure__body--exm-one {
+   display: flex;
+   justify-content: space-between;
+}
+
+.structure__body--exm-two {
+   display: inline-flex;
+   gap: 30px;
+}
+
+.structure__body--exm-three {
+   display: inline-flex;
+   flex-wrap: wrap;
+   column-gap: 200px;
+   justify-content: flex-end;
+}
+
+.structure__body--exm-four {
+   display: flex;
+   justify-content: space-around;
+}
+
+.structure__body--exm-five {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.structure__body--exm-six {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-evenly;
+}
+
+.structure__body--exm-seven {
+   display: flex;
+   flex-direction: column-reverse;
+   gap: 10px;
+   flex-wrap: wrap-reverse;
+   height: 100px;
+}
+
+
+.structure__body--exm-elem-one {
+   display: flex;
+   flex-direction: column;
+}
+
+.structure__body--exm-elem-one .structure__block--two {
+   align-self: center;
+}
+
+.structure__body--exm-elem-one .structure__block--three {
+   align-self: baseline;
+}
+
+.structure__body--exm-elem-one .structure__block--four {
+   align-self: flex-end;
+}
+
+.structure__body--exm-elem-one .structure__block--five {
+   align-self: flex-start;
+}
+
+.structure__body--exm-elem-two {
+   display: flex;
+}
+
+.structure__body--exm-elem-two .structure__block--two {
+   flex-grow: 1;
+}
+
+.structure__body--exm-elem-three {
+   display: flex;
+}
+
+.structure__body--exm-elem-three .structure__block {
+   flex-basis: 220px;
+   flex-shrink: 0;
+}
+
+.structure__body--exm-elem-three .structure__block--four {
+   flex-shrink: 1;
+}
+
+.structure__body--exm-elem-four {
+   display: flex;
+   justify-content: space-between;
+}
+
+.structure__body--exm-elem-four .structure__block--one {
+   order: 3;
+}
+
+.structure__body--exm-elem-four .structure__block--two {
+   order: 5;
+}
+
+.structure__body--exm-elem-four .structure__block--three {
+   order: 1;
+}
+
+.structure__body--exm-elem-four .structure__block--four {
+   order: 2;
+}
+
+.structure__body--exm-elem-four .structure__block--five {
+   order: 4;
+}
+
+.task-one-title {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.task-one__text-structure {
+   display: flex;
+   flex-direction: column;
+   row-gap: 18px;
+   margin-bottom: 50px;
+   align-items: flex-start;
+}
+
+.text-structure__title {
+   font-size: 20px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
+
+.text-structure__text {
+   line-height: 1.4;
+   text-indent: 30px;
+}
+
+.text-structure__link {
+   line-height: 40px;
+   padding: 0 40px;
+   border-radius: 20px;
+   background-color: rgb(215, 198, 0);
+   color: #fff;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   border: 1px solid #fff;
+}
+
+
+
+.practice__task-two {
+   margin-bottom: 40px;
+}
+
+.task-two__title {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.task-two__structure {
+   display: flex;
+   margin: 0 -15px;
+}
+
+.structure__column {
+   flex: 0 1 33.333%;
+   padding: 0 15px;
+}
+
+.structure__item {
+   padding: 10px;
+   min-height: 100%;
+   border: 1px solid rgb(135, 135, 135);
+
+}
+
+.item {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 15px;
+}
+
+.item__image img {
+   max-width: 100%;
+}
+
+.item__text {
+   line-height: 1.4;
+   flex-grow: 1;
+}
+
+.item__link {
+   text-transform: uppercase;
+   background-color: rgb(215, 198, 0);
+   color: #000;
+   line-height: 40px;
+   padding: 0 20px;
+   letter-spacing: 3px;
+}
+
+.practice__task-three {
+   margin-bottom: 40px;
+}
+
+.task-three-title {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.task-three__link {
+   display: inline-flex;
+   color: rgb(215, 198, 0);
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   align-items: center;
+   gap: 10px;
+
+}
+
+.task-three__link::before {
+   content: "";
+   flex: 0 0 20px;
+   height: 20px;
+   width: 20px;
+   background-color: red;
+   border-radius: 50%;
+   overflow: hidden;
+}
