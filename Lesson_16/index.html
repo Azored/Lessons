@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 16</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <section class="page__practice practice">
+            <h2 class="practice__title title">Практика</h2>
+            <div class="practice__container">
+               <form action="#" class="practice__form form-practice" enctype="multipart/form-data" method="get">
+                  <div class="form-practice__line">
+                     <label class="form-practice__label" for="name-01">Введіть ім'я*</label>
+                     <input class="form-practice__input" type="text" id="name-01" name="practice-name"
+                        placeholder="Ваше ім'я" required autocomplete="off">
+                  </div>
+                  <div class="form-practice__line">
+                     <label class="form-practice__label" for="age-01">Введіть вік*</label>
+                     <input class="form-practice__input" type="text" id="age-01" name="practice-age"
+                        placeholder="Ваш вік" required autocomplete="off">
+                  </div>
+                  <div class="form-practice__line">
+                     <label class="form-practice__label" for="email-01">Введіть електронну пошту*</label>
+                     <input class="form-practice__input" type="email" id="email-01" name="practice-email"
+                        placeholder="Ваша електронна пошта" required>
+                  </div>
+                  <div class="form-practice__line">
+                     <label class="form-practice__label" for="tel-01">Введіть номер телефону*</label>
+                     <input class="form-practice__input" type="tel" id="tel-01" name="practice-tel"
+                        placeholder="Ваш номер телефону" required autocomplete="off">
+                  </div>
+                  <div class="form-practice__line">
+                     <label class="form-practice__label" for="date-01">Введіть вашу дату народження*</label>
+                     <input class="form-practice__input" type="date" id="date-01" name="practice-date"
+                        placeholder="Ваша дата народження" required autocomplete="off">
+                  </div>
+                  <div class="form-practice__line">
+                     <label class="form-practice__label" for="pass-01">Введіть ваш пароль*</label>
+                     <input class="form-practice__input" type="password" id="pass-01" name="practice-password"
+                        placeholder="Ваш пароль" required autocomplete="off">
+                  </div>
+                  <div class="form-practice__line">
+                     <label class="form-practice__label" for="number-01">Введіть ваше улюблене число</label>
+                     <input class="form-practice__input" type="number" id="number-01" name="practice-number"
+                        placeholder="Ваше улюблене число" autocomplete="off">
+                  </div>
+                  <div class="form-practice__line form-practice__line--color">
+                     <label class="form-practice__label form-practice__label--color" for="color-01">Виберіть ваш
+                        улюблений колір</label>
+                     <input class="form-practice__input form-practice__input--color" type="color" id="color-01"
+                        name="practice-color" placeholder="Ваш улюблений колір" autocomplete="off">
+                  </div>
+                  <div class="form-practice__line">
+                     <label class="form-practice__label" for="search-01">Введіть пошуковий запит</label>
+                     <input class="form-practice__input" type="search" id="search-01" placeholder="Ваш пошуковий запит">
+                  </div>
+                  <div class="form-practice__line">
+                     <label class="form-practice__label" for="range-01">Виберіть значення</label>
+                     <input class="form-practice__input" type="range" id="range-01" name="practice-range"
+                        autocomplete="off">
+                  </div>
+                  <div class="form-practice__line">
+                     <label class="form-practice__label" for="">Виберіть файл</label>
+                     <input class="form-practice__input form-practice__input--file" name="file" type="file">
+                  </div>
+                  <div class="form-practice__line">
+                     <input class="form-practice__input" name="token" value="деякі дані" type="hidden">
+                  </div>
+                  <div class="form-practice__line form-practice__line--list">
+                     <label for="list-01">Виберіть вашу країну:</label>
+                     <select name="country-list" id="list-01">
+                        <option selected value="empty">Не вибрано</option>
+                        <option value="ukraine">Україна</option>
+                        <option value="poland">Польща</option>
+                        <option value="united-kingdom">Великобританія</option>
+                        <option value="germany">Германія</option>
+                     </select>
+                  </div>
+                  <div class="form-practice__line checkbox">
+                     <input class="checkbox__input" type="checkbox" id="home-01" name="home" autocomplete="off">
+                     <label class="checkbox__label" for="home-01"><span class="checkbox__text">У вас є
+                           дім?</span></label>
+                  </div>
+                  <div class="form-practice__line checkbox">
+                     <input class="checkbox__input" type="checkbox" id="car-01" name="car" autocomplete="off">
+                     <label class="checkbox__label" for="car-01"><span class="checkbox__text">У вас є
+                           автомобіль?</span></label>
+                  </div>
+                  <div class="form-practice__line checkbox">
+                     <input class="checkbox__input" type="checkbox" id="bicycle-01" name="bicycle" autocomplete="off">
+                     <label class="checkbox__label" for="bicycle-01"><span class="checkbox__text">У вас є
+                           велосипед?</span></label>
+                  </div>
+                  <div class="form-practice__line">
+                     <h3 class="form-practice__title">Ваша улюблена домашня тварина:</h3>
+                     <div class="form-practice__radio radio">
+                        <input class="radio__input" type="radio" name="pet" id="pet-01" value="dog" autocomplete="off">
+                        <label class="radio__label" for="pet-01"><span class="radio__text">Собака</span></label>
+                     </div>
+                     <div class="form-practice__radio radio">
+                        <input class="radio__input" type="radio" name="pet" id="pet-02" value="cat" autocomplete="off">
+                        <label class="radio__label" for="pet-02"><span class="radio__text">Кішка</span></label>
+                     </div>
+                     <div class="form-practice__radio radio">
+                        <input class="radio__input" type="radio" name="pet" id="pet-03" value="hamster"
+                           autocomplete="off">
+                        <label class="radio__label" for="pet-03"><span class="radio__text">Хом'як</span></label>
+                     </div>
+                  </div>
+                  <div class="form-practice__line">
+                     <label class="form-practice__label" for="area-01">Напишіть коротко про себе</label>
+                     <textarea class="form-practice__area" name="info" id="area-01" autocomplete="off"></textarea>
+                  </div>
+                  <div class="form-practice__line actions">
+                     <button class="actions__btn" type="reset">Очистити форму</button>
+                     <button class="actions__btn" type="submit">Відправити форму</button>
+                  </div>
+               </form>
+            </div>
+         </section>
+         <section class="page__homework homework">
+            <h2 class="homework__title title">Верстка форми з макету</h2>
+            <div class="homework__container">
+               <div class="homework__picture">
+                  <img class="homework__image" src="img/homework/illustration.svg" alt="Illustration">
+               </div>
+               <div class="homework__info">
+                  <div class="homework__title title-block">
+                     <h3 class="title-block__subtitle">Any questions?</h3>
+                     <h2 class="title-block__subject">Drop us a line</h2>
+                  </div>
+                  <form action="https://jsonplaceholder.typicode.com/posts" method="post"
+                     class="homework__form form-homework">
+                     <div class="form-homework__row">
+                        <div class="form-homework__line">
+                           <label class="form-homework__label" for="first-name">First Name*</label>
+                           <input class="form-homework__input" id="first-name" type="text" required name="first-name"
+                              placeholder="Your first name" autocomplete="off">
+                        </div>
+                        <div class="form-homework__line">
+                           <label class="form-homework__label" for="last-name">Last Name*</label>
+                           <input class="form-homework__input" id="last-name" type="text" required name="last-name"
+                              placeholder="Your last name" autocomplete="off">
+                        </div>
+                     </div>
+                     <div class="form-homework__row">
+                        <div class="form-homework__line">
+                           <label class="form-homework__label" for="email">Email*</label>
+                           <input class="form-homework__input" id="email" type="email" required name="email"
+                              placeholder="Your working email" autocomplete="off">
+                        </div>
+                        <div class="form-homework__line">
+                           <label class="form-homework__label" for="tel">Phone</label>
+                           <input class="form-homework__input" id="tel" type="tel" name="tel"
+                              placeholder="Your phone number" autocomplete="off">
+                        </div>
+                     </div>
+                     <div class="form-homework__line form-homework__line--area">
+                        <label class="form-homework__label" for="message">Message*</label>
+                        <textarea class="form-homework__message" name="message" id="message" placeholder="Your message"
+                           required autocomplete="off"></textarea>
+                     </div>
+                     <div class="form-homework__row">
+                        <div class="form-homework__line checkbox-form">
+                           <input class="checkbox-form__input" type="checkbox" required name="consent" id="consent"
+                              autocomplete="off">
+                           <label class="checkbox-form__label" for="consent"><span class="checkbox-form__text">I agree
+                                 to
+                                 receive communications from Createx
+                                 Online School</span></label>
+                        </div>
+                        <div class="form-homework__line">
+                           <button class="button-solid" type="submit"><span>Send message</span></button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+
+</html>
